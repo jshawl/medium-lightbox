@@ -23,17 +23,17 @@ $('img').on('click', function(){
     $copy.animate({ 
       width: '800px', 
       height: newHeight + 'px',
-      top: '2em',
+      top: ($(window).height() /2) - newHeight / 2 + 'px',
       left: ( pageWidth / 2 ) - (400) + 'px'
-    }, 5000);  
+    });  
   } else{
     newWidth = bounds.height * dimensions.aspectRatio;
     $copy.animate({ 
       width: newWidth, 
       height: '500px',
-      top: '2em',
+      top: ($(window).height() /2) - 500 / 2 + 'px',
       left: ( pageWidth / 2 ) - (newWidth / 2) + 'px'
-    }, 5000);  
+    });  
   }
   $copy.toggleClass('is-expanded');
   $('.canvas').css('display','block');
