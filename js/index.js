@@ -37,9 +37,14 @@ $('img').on('click', function(){
   }
   $copy.toggleClass('is-expanded');
   $('.canvas').css('display','block');
+  $('.canvas').animate({'opacity':'1'});
   $('.canvas').html($copy);
 });
 
 $('.canvas').on('click', function(){
-  $(this).css('display','none');
+  $(this).animate({
+    opacity: 0
+  },function(){
+    $(this).css('display','none');
+  });
 });

@@ -25,6 +25,7 @@ body {
   height: 100%;
   width: 100%;
   background: rgba(255, 255, 255, 0.95);
+  opacity:0;
 }
 .canvas img {
   position: absolute;
@@ -40,4 +41,3 @@ img {
 .canvas .is-expanded{
   top:2em ;
 }
-
